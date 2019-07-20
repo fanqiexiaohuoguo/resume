@@ -1,6 +1,6 @@
 body{
-    background-color: black;
-    color:white;
+    background-color: #efefef;
+    color:black;
     margin: 0;
 }
 a{
@@ -12,18 +12,17 @@ a{
     display:block;
     clear: both;
 }
-.topNavBar>nav>ul{
+.topNavBar nav>ul{
     list-style: none;
     margin: 0;
     padding: 0;
-
 }
-.topNavBar>nav>ul>li{
+.topNavBar nav>ul>li{
     float: left;
     margin-left: 17px;
     margin-right: 17px;
 }
-.topNavBar>nav>ul>li>a{
+.topNavBar nav>ul>li>a{
     font-size: 12px;
     font-weight: bold;
     color: #b7b7b7;
@@ -32,20 +31,26 @@ a{
     border-top: 3px solid transparent;
     border-bottom: 3px solid transparent;
 }
-.topNavBar>nav>ul>li>a:hover{
+.topNavBar nav>ul>li>a:hover{
     border-bottom: 3px solid #e06567;
 }
-.topNavBar>a{
+.topNavBar a{
     float: left;
 }
-.topNavBar>nav{
+.topNavBar nav{
     float: right;
     padding: 3px 0px 4px 0px;
 }
 .topNavBar{
-    padding: 20px 16px 20px 16px; 
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 20px 0px;
+    width:100%; 
 }
-
+.topNavBar .topNavBar-inner{
+    padding: 0px 16px;
+}
 .topNavBar .logo{
     font-size: 24px;
     font-family: "Arial Black";
@@ -57,4 +62,37 @@ a{
 }
 .topNavBar .logo .card{
     color: #9a9da2;
+}
+.banner{
+    height: 515px;
+    background-image: url(./images/rs-cover.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.banner .mask{
+    height: 515px;
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* 用户卡片 */
+.userCard{
+    max-width: 940px;
+    border:1px solid red;
+    background-color: white;
+}
+.userCard .welcome{
+    background: #E6686a;
+    color: white;
+    display: inline-block;
+    padding: 4px 16px;
+    line-height: 22px;
+    position: relative;
+}
+.userCard .welcome .triangle{
+    position: absolute;
+    left: 6px;
+    bottom: -10px;
+    border: 10px solid transparent;
+    border-top: 0px;
+    border-left-color:#E6686a;
 }
